@@ -4,55 +4,11 @@
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <meta name="google-site-verification" content="SPITRtvZ0FLHMFOfdJIgurTmWjoV_DYus8ezLHSOQBc" />
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-      }
-      .container {
-        text-align: center;
-      }
-      #countdown {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: #333;
-      }
-    </style>
+    <script>
+      // Redirect immediately
+      window.location.href = "https://chand6907.github.io/portfolio/";
+    </script>
   </head>
   <body>
-    <div class="container">
-      <h1>Redirecting in <span id="countdown">3</span> seconds...</h1>
-      <p>
-        If you are not redirected automatically,
-        <a id="redirect-link" href="#">click here</a>.
-      </p>
-    </div>
-    <script>
-      const redirectUrl =
-        "https://chand6907.github.io/portfolio/"; 
-
-      var countdownElement = document.getElementById("countdown");
-      var redirectLink = document.getElementById("redirect-link");
-      var countdownTime = 0; 
-
-      function updateCountdown() {
-        if (countdownTime > 0) {
-          countdownTime--;
-          countdownElement.textContent = countdownTime;
-        } else {
-          clearInterval(countdownInterval);
-          window.location.href = redirectUrl;
-        }
-      }
-
-      redirectLink.href = redirectUrl;
-
-      var countdownInterval = setInterval(updateCountdown, 1000);
-    </script>
   </body>
 </html>
